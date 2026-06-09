@@ -1,0 +1,93 @@
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body { background: #0a0a0a; color: #f5f2eb; }
+
+    /* ── CHECKBOX ── */
+    #enter { display: none; }
+
+    /* ── SHOW/HIDE SWAP ── */
+    .main { display: none; }
+
+    #enter:checked ~ .preloader { display: none; }
+    #enter:checked ~ .main      { display: block; }
+
+    /* ── PRELOADER ── */
+    .preloader {
+      position: fixed; inset: 0;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+    }
+
+    /* Part 1 — image */
+    .pre-image {
+      animation: preImageAnim 2s ease-out forwards;
+    }
+
+    .pre-image img {
+      width: 120px;
+      height: auto;
+    }
+
+    @keyframes preImageAnim {
+      0%   { opacity: 0; transform: scale(0.85); }
+      60%  { opacity: 1; transform: scale(1); }
+      85%  { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    /* Parts 2-4 — texts */
+    .pre-text {
+      position: absolute;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      color: rgba(255,255,255,0.8);
+      text-align: center;
+      max-width: 600px;
+      padding: 0 2rem;
+      opacity: 0;
+      animation: textCycle 2.5s ease-in-out forwards;
+    }
+
+    @keyframes textCycle {
+      0%   { opacity: 0; transform: translateY(8px); }
+      20%  { opacity: 1; transform: translateY(0);   }
+      70%  { opacity: 1; transform: translateY(0);   }
+      100% { opacity: 0; transform: translateY(-8px);}
+    }
+
+    .pre-text-1 { animation-delay: 2s;   }
+    .pre-text-2 { animation-delay: 4.5s; }
+    .pre-text-3 { animation-delay: 7s;   }
+
+    /* Enter button */
+    .pre-enter {
+      position: absolute;
+      opacity: 0;
+      font-size: 13px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      border: 1px solid rgba(201,168,76,0.55);
+      border-radius: 100px;
+      padding: 14px 42px;
+      cursor: pointer;
+      animation: preFade 800ms ease-out 9.5s forwards;
+      transition: background-color 200ms ease;
+    }
+
+    .pre-enter:hover { background: rgba(201,168,76,0.12); }
+
+    @keyframes preFade {
+      to { opacity: 1; }
+    }
+
+    /* ── MAIN PAGE ── */
+    .main {
+      min-height: 100vh;
+      padding: 2rem;
+    }

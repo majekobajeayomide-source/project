@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>project</title>
+  <meta name="description"
+    content="Advancing place-anchored leadership, enterprise, and capital across Africa's secondary cities. A collective for builders, funders, and partners." />
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+
+  
+  <input type="checkbox" id="enter-intro-checkbox" class="d-none" />
+
+  <div class="tpc-intro-overlay">
+    
+    <!-- Slide 0: The Loading Video -->
+    <div class="intro-slide intro-slide-0">
+      <div class="tpc-preloader-content">
+        <video src="media/preloader-dome-CyBTUreC.gif.mp4" autoplay loop muted playsinline class="tpc-preloader-video"></video>
+        <div class="tpc-preloader-text">LOADING</div>
+        <div class="tpc-preloader-bar-container">
+          <div class="tpc-preloader-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 1: Welcome -->
+    <div class="intro-slide intro-slide-1">
+      <h1 class="intro-title" style="font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 400; line-height: 1.2;">
+        <span style="color: var(--tpc-white); font-style: italic;">Welcome to</span><br/>
+        <span style="color: var(--tpc-gold); font-style: italic;">The Place Collective.</span>
+      </h1>
+    </div>
+
+    <!-- Slide 2: Quote -->
+    <div class="intro-slide intro-slide-2">
+      <p class="intro-quote" style="font-family: var(--font-serif); font-size: clamp(1.5rem, 3.5vw, 2.5rem); font-weight: 400; line-height: 1.4; color: var(--tpc-white); font-style: italic; max-width: 900px; margin: 0 auto;">
+        Never doubt that a small group of<br/>
+        thoughtful, committed citizens<br/>
+        can change the world,<br/>
+        <span style="color: var(--tpc-gold);">indeed, it's the only thing<br/>that ever has.</span>
+      </p>
+      <p class="intro-author" style="font-family: var(--font-sans); color: var(--tpc-gold); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 3rem; font-weight: 500;">
+        MARGARET MEAD
+      </p>
+    </div>
+
+    <!-- Slide 3: Enter -->
+    <div class="intro-slide intro-slide-3">
+      <div style="width: 40px; height: 1px; background-color: var(--tpc-gold); margin-bottom: 2rem;"></div>
+      <p class="intro-statement" style="font-family: var(--font-serif); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 400; line-height: 1.5; color: var(--tpc-white); font-style: italic; max-width: 800px; margin: 0 auto 4rem auto;">
+        True transformation begins with visionary leadership,<br/>
+        committed to specific places, over long periods of time.
+      </p>
+      <label for="enter-intro-checkbox" class="intro-enter-btn">ENTER</label>
+    </div>
+
+  </div>
+  
+  
+
+
+  <nav id="mainNav" class="navbar navbar-expand-lg tom-navbar fixed-top">
+    <div class="container-fluid ">
+
+      <a class="navbar-brand tom-brand" href="#">THE PLACE COLLECTIVE</a>
+
+
+      <div class="d-flex align-items-center gap-4 d-lg-none">
+        <!-- <a class="tpc-nav-icon" href="#" aria-label="Settings" -->
+          <!-- style="color: var(--tpc-white); font-size: 1.1rem; line-height: 1;"> -->
+          <i class="bi bi-sun"></i>
+        </a>
+        <button class="navbar-toggler border-0 p-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="var(--tpc-white)" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+      </div>
+
+
+      <div class="offcanvas-lg offcanvas-end w-100 border-start-0 tpc-mobile-offcanvas" tabindex="-1"
+        id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom border-secondary border-opacity-25">
+          <h5 class="offcanvas-title tpc-brand m-0" id="offcanvasNavbarLabel"
+            style="font-size: 0.8rem; letter-spacing: 0.2em;">THE PLACE COLLECTIVE</h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 align-items-lg-center gap-lg-1">
+
+
+            <li class="nav-item">
+              <a class="nav-link tom-nav-link" href="#">About</a>
+            </li>
+
+
+            <li class="nav-item dropdown tpc-dropdown">
+              <a class="nav-link tom-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" id="workDropdown">
+                Our Work
+              </a>
+              <ul class="dropdown-menu tom-dropdown-menu" aria-labelledby="workDropdown">
+                <li><a class="dropdown-item tom-dropdown-item" href="#">Overview</a></li>
+                <li><a class="dropdown-item tom-dropdown-item" href="#">Place Fellowship</a></li>
+                <li><a class="dropdown-item tom-dropdown-item" href="#">Funds for Place Lab</a></li>
+                <li><a class="dropdown-item tom-dropdown-item" href="#">Research &amp; Advisory</a></li>
+                <li><a class="dropdown-item tom-dropdown-item" href="#">Place Conference</a></li>
+                <li><a class="dropdown-item tom-dropdown-item" href="#">Cartographer Series</a></li>
+                <li><a class="dropdown-item tom-dropdown-item" href="#">Stories of Ogbomoso</a></li>
+                <li><a class="dropdown-item tom-dropdown-item" href="#">Garden of Becoming</a></li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item dropdown tom-dropdown">
+              <a class="nav-link tom-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" id="osogbosoDropdown">
+                Ogbomoso
+              </a>
+              <ul class="dropdown-menu tom-dropdown-menu" aria-labelledby="osogbosoDropdown">
+                <li><a class="dropdown-item tom-dropdown-item" href="#">Overview</a></li>
+                <li><a class="dropdown-item tom-dropdown-item" href="#">Explore Ecosystem Brief</a></li>
+                <li><a class="dropdown-item tom-dropdown-item" href="#">See Ventures</a></li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link tom-nav-link" href="#">Place Papers</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link tom-nav-link" href="#">Community</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link tom-nav-link" href="#">Partnership</a>
+            </li>
+
+
+            <li class="nav-item ms-lg-2 d-none d-lg-block">
+              <a class="nav-link tom-nav-link tpc-nav-icon" href="#" aria-label="Settings">
+                <i class="bi bi-sun"></i>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="hero" class="tom-hero">
+
+    <div class="tom-video-wrapper" aria-hidden="true">
+      <iframe title="Place Collective hero film"
+        src="https://www.youtube-nocookie.com/embed/qGvdNNOBzUk?autoplay=1&mute=1&controls=0&loop=1&playlist=qGvdNNOBzUk&playsinline=1&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&fs=0&cc_load_policy=0&vq=hd1080&hd=1"
+        allow="autoplay; encrypted-media" frameborder="0" aria-hidden="true">
+      </iframe>
+
+      <div class="tom-video-overlay"></div>
+    </div>
+
+
+    <div class="tom-hero-content">
+      <div class="tom-hero-accent-line"></div>
+      <h1 class="tom-hero-title">Because Places Matter.</h1>
+      <p class="tom-hero-subtitle">
+        Africa's future will be shaped by those who commit, deeply, patiently, and over time, to the places they
+        call home.
+      </p>
+    </div>
+
+
+
+
+    <div class="tom-scroll-indicator">
+      <span>SCROLL TO EXPLORE</span>
+      <a href=""><i class="bi bi-arrow-down ms-2"></i></a>
+    </div>
+  </section>
+
+
+  <section id="what-we-are" class="tom-what-we-are">
+    <div class="container py-5">
+      <div class="row">
+
+        <div class="col-lg-6 tom-wwa-left">
+          <div class="tom-section-label">
+            <span class="tom-label-line tpc-label-line--gold"></span>
+            <span class="tom-label-text">WHAT WE ARE</span>
+          </div>
+          <h2 class="tom-wwa-heading">
+            The Place Collective advances the <br>
+            practice and discipline of place-<br>
+            anchored leadership, enterprise,<br>
+            and capital across Africa's<br>
+            secondary cities.
+          </h2>
+        </div>
+
+
+        <div class="col-lg-6 tom-wwa-right">
+          <p class="tom-wwa-body">
+            We exist to form people who take responsibility for place, and to build the systems that allow those places
+            to become economically productive, socially coherent, and culturally alive over time.
+          </p>
+          <hr class="tom-wwa-divider" />
+          <p class="tom-wwa-body-sm">
+            A growing fellowship of builders, scholars, designers, investors, and civic custodians, committed to the
+            long work of building in the same direction across generations and geographies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="the-challenge" class="tom-challenge">
+    <div class="container py-5">
+      <div class="row align-items-center">
+
+        <div class="col-lg-7 tom-challenge-left">
+          <div class="tom-section-label" style="margin-bottom: 10rem !important;">
+            <span class="tom-label-line tom-label-line--gold"></span>
+            <span class="tom-label-text" style="color: var(--tpc-grey);">THE CHALLENGE</span>
+          </div>
+          <h2 class="tom-challenge-title">The world is building in the wrong places.</h2>
+          <p class="tom-challenge-body">
+            Capital follows capital. Attention follows attention. For decades, the story of African growth has been told
+            through a handful of megacities. Lagos. Nairobi. Johannesburg. Accra. The investors went there. The
+            institutions went there. The infrastructure went there. Everything else waited.
+          </p>
+          <p class="tom-challenge-body">
+            But Africa is not its megacities. Across the continent, hundreds of secondary cities and university towns
+            sit at the intersection of young populations, deep community networks, and genuine intellectual capital.
+            They are not empty. They are not broken. They are underestimated, and largely passed over by the private
+            capital and global institutions that could change their trajectory.
+          </p>
+          <p class="tom-challenge-body fw-bold mt-4 text-white" style="font-size: 1rem;">
+            Talent is widely distributed across this continent. Opportunity is not.
+          </p>
+        </div>
+
+
+        <div class="col-lg-5">
+          <div class="tpc-scroller">
+            <div class="tpc-scroller-track">
+              <div class="tpc-scroller-item" style="--i: 0">
+                <span class="tpc-item-normal">Sikasso</span>
+                <span class="tpc-item-highlight">Sikasso</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 1">
+                <span class="tpc-item-normal">Port Sudan</span>
+                <span class="tpc-item-highlight">Port Sudan</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 2">
+                <span class="tpc-item-normal">Jimma</span>
+                <span class="tpc-item-highlight">Jimma</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 3">
+                <span class="tpc-item-normal">Limbe</span>
+                <span class="tpc-item-highlight">Limbe</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 4">
+                <span class="tpc-item-normal">Entebbe</span>
+                <span class="tpc-item-highlight">Entebbe</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 5">
+                <span class="tpc-item-normal">Beja</span>
+                <span class="tpc-item-highlight">Beja</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 6">
+                <span class="tpc-item-normal">Queenstown</span>
+                <span class="tpc-item-highlight">Queenstown</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 7">
+                <span class="tpc-item-normal">Rwamagana</span>
+                <span class="tpc-item-highlight">Rwamagana</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 8">
+                <span class="tpc-item-normal">Stellenbosch</span>
+                <span class="tpc-item-highlight">Stellenbosch</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 9">
+                <span class="tpc-item-normal">Thohoyandou</span>
+                <span class="tpc-item-highlight">Thohoyandou</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 10">
+                <span class="tpc-item-normal">Gedaref</span>
+                <span class="tpc-item-highlight">Gedaref</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 11">
+                <span class="tpc-item-normal">Standerton</span>
+                <span class="tpc-item-highlight">Standerton</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 12">
+                <span class="tpc-item-normal">Phuthaditjhaba</span>
+                <span class="tpc-item-highlight">Phuthaditjhaba</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 13">
+                <span class="tpc-item-normal">George</span>
+                <span class="tpc-item-highlight">George</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 14">
+                <span class="tpc-item-normal">Kapenguria</span>
+                <span class="tpc-item-highlight">Kapenguria</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 15">
+                <span class="tpc-item-normal">Ouahigouya</span>
+                <span class="tpc-item-highlight">Ouahigouya</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 16">
+                <span class="tpc-item-normal">Sikasso</span>
+                <span class="tpc-item-highlight">Sikasso</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 17">
+                <span class="tpc-item-normal">Port Sudan</span>
+                <span class="tpc-item-highlight">Port Sudan</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 18">
+                <span class="tpc-item-normal">Jimma</span>
+                <span class="tpc-item-highlight">Jimma</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 19">
+                <span class="tpc-item-normal">Limbe</span>
+                <span class="tpc-item-highlight">Limbe</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 20">
+                <span class="tpc-item-normal">Entebbe</span>
+                <span class="tpc-item-highlight">Entebbe</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 21">
+                <span class="tpc-item-normal">Beja</span>
+                <span class="tpc-item-highlight">Beja</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 22">
+                <span class="tpc-item-normal">Queenstown</span>
+                <span class="tpc-item-highlight">Queenstown</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 23">
+                <span class="tpc-item-normal">Rwamagana</span>
+                <span class="tpc-item-highlight">Rwamagana</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 24">
+                <span class="tpc-item-normal">Stellenbosch</span>
+                <span class="tpc-item-highlight">Stellenbosch</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 25">
+                <span class="tpc-item-normal">Thohoyandou</span>
+                <span class="tpc-item-highlight">Thohoyandou</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 26">
+                <span class="tpc-item-normal">Gedaref</span>
+                <span class="tpc-item-highlight">Gedaref</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 27">
+                <span class="tpc-item-normal">Standerton</span>
+                <span class="tpc-item-highlight">Standerton</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 28">
+                <span class="tpc-item-normal">Phuthaditjhaba</span>
+                <span class="tpc-item-highlight">Phuthaditjhaba</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 29">
+                <span class="tpc-item-normal">George</span>
+                <span class="tpc-item-highlight">George</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 30">
+                <span class="tpc-item-normal">Kapenguria</span>
+                <span class="tpc-item-highlight">Kapenguria</span>
+              </div>
+              <div class="tpc-scroller-item" style="--i: 31">
+                <span class="tpc-item-normal">Ouahigouya</span>
+                <span class="tpc-item-highlight">Ouahigouya</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="research" class="tpc-research">
+    <div class="tpc-research-divider"></div>
+    <div class="container tpc-research-content">
+      <div class="row">
+        <div class="col-12">
+          <div class="tpc-label-text" style="color: var(--tpc-grey); margin-bottom: 2rem;">WHAT OUR RESEARCH FOUND.
+          </div>
+          <p class="tpc-research-lead">
+            We looked closely at secondary cities and university communities across the continent. What we <br> found
+            was not a problem waiting for a solution. It was an opportunity waiting for attention <br> Hundreds of
+            cities. Millions of people. Significant concentrations of higher education, youth, and <br> informal
+            economic activity. And almost no coordinated effort to connect those assets into <br> something that
+            compounds.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-start" style="margin-top: 6rem;">
+        <div class="col-lg-6">
+          <div class="tpc-research-number counter-857" ></div>
+        </div>
+        <div class="col-lg-6 tpc-research-stats-col">
+          <p class="tpc-research-desc">
+            Higher Education Institutions across Nigeria, South Africa, and Kenya alone.
+          </p>
+          <div class="tpc-research-list mt-5">
+            <div class="tpc-research-list-item">
+              <span class="tpc-research-country">NIGERIA</span>
+              <span class="tpc-research-count">96 HEIs</span>
+            </div>
+            <div class="tpc-research-list-item">
+              <span class="tpc-research-country">SOUTH AFRICA</span>
+              <span class="tpc-research-count">82 HEIs</span>
+            </div>
+            <div class="tpc-research-list-item">
+              <span class="tpc-research-country">KENYA</span>
+              <span class="tpc-research-count">76 HEIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row align-items-center" style="margin-top: 10rem; padding-bottom: 2rem;">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <p class="tpc-research-desc"
+            style="max-width: 400px; line-height: 1.6 ; color: rgb(225, 225, 225); font-size: 17px;">
+            Secondary cities with populations between<br>100,000 and 600,000.
+          </p>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 text-start text-lg-end">
+          <div class="tpc-research-number counter-305"></div>
+        </div>
+      </div>
+    </div>
+    <div class="tpc-research-divider"></div>
+  </section>
+
+
+  <section id="the-window" class="tpc-window">
+    <div class="container tpc-window-content text-center">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="tpc-window-label">THE WINDOW</div>
+          <h2 class="tpc-window-title">
+            Africa's population is doubling<br>by 2050.
+          </h2>
+          <div class="tpc-window-line" style="margin: 4rem auto;"></div>
+          <p class="tpc-window-desc mt-5" style="font-size: 22px; color: rgb(224, 224, 224);">
+            Secondary cities will absorb the majority of that growth. Whoever<br>shapes those places now <span
+              style="color: #FFCC00;">shapes the continent's future.</span>
+          </p>
+          <div class="tpc-window-line"></div>
+          <p class="tpc-window-sub">
+            That window is open. It will not stay open forever.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="presence-absence" class="tpc-presence">
+    <div class="tpc-research-divider"></div>
+    <div class="container text-center pt-5">
+      <div class="tpc-presence-label">PRESENCE AND ABSENCE</div>
+      <h2 class="tpc-presence-title">
+        The assets are already there. <span class="tpc-presence-fade">The<br>infrastructure is not.</span>
+      </h2>
+
+
+      <div class="row tpc-presence-grid text-start">
+
+        <div class="col-lg-6 tpc-presence-col-left">
+          <div class="tpc-presence-col-label text-tpc-gold mb-5">THE ASSETS ARE ALREADY THERE.</div>
+          <ul class="tpc-presence-list tpc-list-gold">
+            <li>Universities and research institutions.</li>
+            <li>Dense, young populations hungry for opportunity.</li>
+            <li>Strong informal economies with deep community roots.</li>
+            <li>Civic and community networks built over generations.</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6 tpc-presence-col-right">
+          <div class="tpc-presence-col-label text-tpc-grey mb-5">WHAT NO ONE HAS BUILT YET.</div>
+          <ul class="tpc-presence-list tpc-list-grey">
+            <li>Coordinated innovation infrastructure.</li>
+            <li>Early-stage and patient capital willing to stay.</li>
+            <li>University-to-industry linkages.</li>
+            <li>Long-term civic alignment between traditional, public, and private actors.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="what-we-do" class="tpc-wwd">
+    <div class="container tpc-wwd-content">
+      <div class="row">
+        <div class="col-lg-10">
+          <div class="tpc-wwd-label-wrap d-flex align-items-center mb-4">
+            <span class="tpc-wwd-line"></span>
+            <span class="tpc-wwd-label">WHAT WE DO</span>
+          </div>
+          <h2 class="tpc-wwd-title">
+            Four integrated engines of<br>place-based transformation.
+          </h2>
+        </div>
+      </div>
+
+
+      <div class="tpc-wwd-grid">
+        <div class="row g-0">
+
+          <div class="col-md-6 tpc-card">
+            <div class="tpc-card-label">01 / PEOPLE</div>
+            <h3 class="tpc-card-title">Formation</h3>
+            <p class="tpc-card-desc">We develop leaders who commit to place over the long term through fellowships,
+              mentorship, and learning communities.</p>
+            <a href="#" class="tpc-card-link">EXPLORE &rarr;</a>
+          </div>
+
+          <div class="col-md-6 tpc-card">
+            <div class="tpc-card-label">02 / PLACE</div>
+            <h3 class="tpc-card-title">Proof</h3>
+            <p class="tpc-card-desc">We build and document real ecosystems. Ogbomoso serves as a living case study of
+              what place-based transformation looks like.</p>
+            <a href="#" class="tpc-card-link">EXPLORE &rarr;</a>
+          </div>
+
+          <div class="col-md-6 tpc-card">
+            <div class="tpc-card-label">03 / SYSTEMS & CAPITAL</div>
+            <h3 class="tpc-card-title">Practice</h3>
+            <p class="tpc-card-desc">We design enterprises, capital structures, and institutions that enable long-term
+              growth.</p>
+            <a href="#" class="tpc-card-link">EXPLORE &rarr;</a>
+          </div>
+
+          <div class="col-md-6 tpc-card">
+            <div class="tpc-card-label">04 / STORY & COMMUNITY</div>
+            <h3 class="tpc-card-title">Narrative</h3>
+            <p class="tpc-card-desc">We shape how places are understood, documented, and valued, building a shared
+              language for place-based work.</p>
+            <a href="#" class="tpc-card-link">EXPLORE &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="working-proof" class="tpc-proof">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="tpc-wwd-label-wrap d-flex align-items-center mb-5">
+            <span class="tpc-wwd-line"></span>
+            <span class="tpc-wwd-label">A WORKING PROOF</span>
+          </div>
+          <h2 class="tpc-proof-title">
+            Ogbomoso,<br><span class="tpc-proof-subtitle">Nigeria.</span>
+          </h2>
+        </div>
+
+        <div class="col-lg-5 offset-lg-1">
+          <p class="tpc-proof-desc">
+            Over a decade of ecosystem building. <span class="tpc-proof-underline">Ennovate Lab</span> has shown what
+            place-based transformation looks like when sustained, patiently, intentionally, in one city at a time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="stats-continue" class="tpc-stats-continue" style="background: var(--tpc-black); padding-bottom: 10rem;">
+    <div class="container">
+
+
+      <div class="tpc-stats-grid">
+        <div class="row g-0">
+          <div class="col-lg-3 col-sm-6 tpc-stat-card">
+            <h3 class="tpc-stat-val">$7M+</h3>
+            <div class="tpc-stat-label">ECOSYSTEM VALUE GENERATED</div>
+          </div>
+          <div class="col-lg-3 col-sm-6 tpc-stat-card">
+            <h3 class="tpc-stat-val">50+</h3>
+            <div class="tpc-stat-label">VENTURES SUPPORTED</div>
+          </div>
+          <div class="col-lg-3 col-sm-6 tpc-stat-card">
+            <h3 class="tpc-stat-val">2,500+</h3>
+            <div class="tpc-stat-label">JOBS CREATED</div>
+          </div>
+          <div class="col-lg-3 col-sm-6 tpc-stat-card">
+            <h3 class="tpc-stat-val">2.4 acres</h3>
+            <div class="tpc-stat-label">INNOVATION PARK</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tpc-continue-wrap" style="margin-top: 10rem;">
+        <div class="tpc-wwd-label-wrap d-flex align-items-center mb-4">
+          <span class="tpc-wwd-line"></span>
+          <span class="tpc-wwd-label">CONTINUE</span>
+        </div>
+        <a href="#" class="tpc-continue-link">
+          <span class="tpc-continue-text">Explore Ogbomoso</span>
+          <span class="tpc-continue-arrow">&rarr;</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="report" class="tpc-report-section">
+    <div class="container">
+      <a href="#" class="tpc-report-card">
+        <div class="row g-0 align-items-stretch">
+
+          <div class="col-lg-4 position-relative">
+            <div class="tpc-report-badge">NEW REPORT</div>
+            <!-- <img src="media/report-cover-Cka3ZykN (1).jpg" alt="Africa's Overlooked Nexus of Opportunity"
+              class="img-fluid tpc-report-img"> -->
+                <img width="90%" height="600vh" src="https://images.unsplash.com/photo-1562774053-701939374585?w=1000"
+              alt="building">
+          </div>
+
+          <div class="col-lg-8">
+            <div class="tpc-report-content">
+              <div class="tpc-report-meta">ENNOVATE LAB &middot; NOVEMBER 2024</div>
+              <h2 class="tpc-report-title" style="font-size: 40px;">Africa's Overlooked<br>Nexus of Opportunity</h2>
+              <h3 class="tpc-report-subtitle" style="font-size: 18px;">Secondary Cities, Higher Education Institutions
+                and Innovation Hubs</h3>
+              <p class="tpc-report-desc" style="font-size: 12px;">
+                A deep exploration of why Africa's secondary cities, anchored by universities and <br> innovation
+                ecosystems, represent the continent's most underleveraged opportunity for <br> sustainable development.
+              </p>
+              <div class="tpc-report-link">
+                <span class="tpc-report-link-text">READ THE REPORT</span>
+                <span class="tpc-report-link-arrow">&#x2197;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+  <section id="featured" class="tpc-featured-section">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-7">
+          <div class="tpc-wwd-label-wrap d-flex align-items-center mb-4">
+            <span class="tpc-wwd-line"></span>
+            <span class="tpc-wwd-label">FEATURED</span>
+          </div>
+          <h2 class="tpc-featured-title" style="font-size: 50px;">
+            Conversations shaping <span class="tpc-text-yellow">the work.</span>
+          </h2>
+        </div>
+        <div class="col-lg-5">
+          <p class="tpc-featured-desc" style="font-size: 16px;">
+            Talks, roundtables, and field notes that argue, plainly, <br> why places matter, and what it takes to build
+            them well.
+          </p>
+        </div>
+      </div>
+      <div class="youtube px-2 px-md-0 mt-5">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="video-item">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/HcEAb1JAzq8?si=U_3K8s-aC-TNxQ5G" title="YouTube video player"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="video-text">
+                <p>YOUTUBE • DIGITAL ROUNDTABLE SERIES</p>
+                <h5>Cities as Innovation Hubs</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="video-item">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/agEF7Bz6Ypk?si=wgQ06QvfDFLEbAz3" title="YouTube video player"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="video-text">
+                <p>YOUTUBE • AMANDA HUFFORD • ODES</p>
+                <h5>Designing the Built Environment for Economic Flourishing.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="video-item">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/lJw7BPm79z0?si=4CVxS_7qcTAYFgxu" title="YouTube video player"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="video-text">
+                <p>YOUTUBE • PLACE COLLECTIVE</p>
+                <h5>Leadership Anchored to a Place Over Time</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="video-item">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/d29laOtq-VA?si=IUPUt_nwtytFe3M_" title="YouTube video player"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="video-text">
+                <p>YOUTUBE • JESUDAMILARE ADESEGUN-DAVID</p>
+                <h5>Underserved University Communities: Africa's New Frontier</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="video-item">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/VlTY5D86-ZM?si=E3m7C3n2lcr2BAu0" title="YouTube video player"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="video-text">
+                <p>YOUTUBE • JESUDAMILARE ADESEGUN-DAVID</p>
+                <h5>Place, Patience &amp; Community</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="place-papers" class="tpc-place-papers">
+    <div class="container">
+      <div class="tpc-wwd-label-wrap d-flex align-items-center mb-4">
+        <span class="tpc-wwd-line tpc-line-yellow"></span>
+        <span class="tpc-wwd-label tpc-text-yellow">PLACE PAPERS</span>
+      </div>
+      <h2 class="tpc-place-papers-title">
+        <span class="d-block text-white">Ideas that</span>
+        <span class="d-block tpc-place-papers-italic">take root</span>
+        <span class="d-block tpc-place-papers-grey">in real places.</span>
+      </h2>
+      <div class="tpc-place-papers-actions mt-5 pt-3">
+        <a href="#" class="btn tpc-btn-yellow rounded-pill">READ LATEST ESSAY</a>
+        <a href="#" class="tpc-link-grey ms-4">EXPLORE ALL PAPERS &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="tpc-marquee-section">
+    <div class="tpc-marquee-wrapper">
+      <div class="tpc-marquee-track">
+
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">01</span>
+          <h4 class="tpc-marquee-title">Africa's Overlooked Nexus of Opportunity</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">02</span>
+          <h4 class="tpc-marquee-title">Rethinking Leadership: Connecting Leadership &amp; Place</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">03</span>
+          <h4 class="tpc-marquee-title">Beauty from Brokenness: The Theology of Place and the Redemptive Imagination of
+            the Marsh Collective</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">04</span>
+          <h4 class="tpc-marquee-title">The Slow Miracle of Bramble: Odunayo Aliu and the Architecture of Hope</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">05</span>
+          <h4 class="tpc-marquee-title">Of Christopher Alexander, The Timeless Way of Building and Ethnography</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">06</span>
+          <h4 class="tpc-marquee-title">The Architecture of Belonging</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">07</span>
+          <h4 class="tpc-marquee-title">Stewards of Memory</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">01</span>
+          <h4 class="tpc-marquee-title">Africa's Overlooked Nexus of Opportunity</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">02</span>
+          <h4 class="tpc-marquee-title">Rethinking Leadership: Connecting Leadership &amp; Place</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">03</span>
+          <h4 class="tpc-marquee-title">Beauty from Brokenness: The Theology of Place and the Redemptive Imagination of
+            the Marsh Collective</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">04</span>
+          <h4 class="tpc-marquee-title">The Slow Miracle of Bramble: Odunayo Aliu and the Architecture of Hope</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">05</span>
+          <h4 class="tpc-marquee-title">Of Christopher Alexander, The Timeless Way of Building and Ethnography</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">06</span>
+          <h4 class="tpc-marquee-title">The Architecture of Belonging</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+        <a href="#" class="tpc-marquee-item">
+          <span class="tpc-marquee-num">07</span>
+          <h4 class="tpc-marquee-title">Stewards of Memory</h4>
+          <span class="tpc-marquee-arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="who-this-is-for" class="tpc-who-section position-relative">
+    <div class="container position-relative z-1">
+      <div class="tpc-wwd-label-wrap d-flex align-items-center mb-4">
+        <span class="tpc-wwd-line tpc-line-yellow"></span>
+        <span class="tpc-wwd-label tpc-text-grey">WHO THIS IS FOR</span>
+      </div>
+      <h2 class="tpc-who-title">
+        A collective for those <br> who stay and build.
+      </h2>
+
+
+      <div class="row g-0 tpc-who-grid">
+
+        <div class="col-lg-4">
+          <a href="#" class="tpc-who-card">
+            <h3 class="tpc-who-card-title">Builders</h3>
+            <p class="tpc-who-card-text">Individuals committed to building in specific places over time, entrepreneurs,
+              designers, civic leaders.</p>
+            <span class="tpc-who-card-link">JOIN THE COMMUNITY &rarr;</span>
+          </a>
+        </div>
+
+        <div class="col-lg-4">
+          <a href="#" class="tpc-who-card">
+            <h3 class="tpc-who-card-title">Funders &amp; Investors</h3>
+            <p class="tpc-who-card-text">Institutions seeking long-term, system-level impact beyond short-term
+              interventions.</p>
+            <span class="tpc-who-card-link">PARTNER WITH US &rarr;</span>
+          </a>
+        </div>
+
+        <div class="col-lg-4">
+          <a href="#" class="tpc-who-card">
+            <h3 class="tpc-who-card-title">Partners</h3>
+            <p class="tpc-who-card-text">Organizations working in urban development, innovation, and economic
+              transformation across Africa.</p>
+            <span class="tpc-who-card-link">EXPLORE PATHWAYS &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="tpc-invitation-section position-relative overflow-hidden">
+
+    <div class="tpc-circle-graphic">
+      <div class="tpc-circle tpc-circle-1"></div>
+      <div class="tpc-circle tpc-circle-2"></div>
+      <div class="tpc-circle tpc-circle-3"></div>
+      <div class="tpc-circle tpc-circle-4"></div>
+    </div>
+
+    <div class="container position-relative z-1">
+      <div class="mb-5 pb-3">
+        <span class="tpc-invitation-label">AN INVITATION</span>
+      </div>
+
+      <h2 class="tpc-invitation-title">
+        The work of place is long.<br>
+        <span class="tpc-invitation-subtitle">It is also urgent.</span>
+      </h2>
+
+      <p class="tpc-invitation-text">
+        There is a place for you in this collective.
+      </p>
+
+      <div class="tpc-invitation-actions d-flex flex-wrap gap-4">
+        <a href="#" class="tpc-btn-dark">JOIN THE COLLECTIVE &rarr;</a>
+        <a href="#" class="tpc-btn-outline">PARTNER WITH US &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="tpc-footer">
+    <div class="container">
+      <div class="row tpc-footer-top">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <h4 class="tpc-footer-heading">THE PLACE COLLECTIVE</h4>
+          <p class="tpc-footer-desc">
+            Advancing the practice and discipline of place-anchored leadership,<br> enterprise, and capital across
+            Africa's secondary cities.
+          </p>
+          <p class="tpc-footer-subdesc">By Ennovate Lab</p>
+
+          <div class="tpc-social-icons d-flex gap-4">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+
+            <a href="#">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+              </svg>
+            </a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 offset-lg-2 mb-5 mb-lg-0">
+          <h5 class="tpc-footer-menu-heading">NAVIGATE</h5>
+          <ul class="tpc-footer-menu list-unstyled">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">Ogbomoso</a></li>
+            <li><a href="#">Place Papers</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="tpc-footer-menu-heading">CONNECT</h5>
+          <ul class="tpc-footer-menu list-unstyled">
+            <li><a href="#">Partner With Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tpc-footer-separator"></div>
+
+      <div class="row tpc-footer-bottom">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p>&copy; 2026 The Place Collective. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p>Built for place. Built to last.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
